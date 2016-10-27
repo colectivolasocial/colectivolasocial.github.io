@@ -1,0 +1,36 @@
+* {
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+header {
+  position: fixed;
+  top: 40%;
+  left: 30%;
+  z-index: 100;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 4em;
+}
+
+small {
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  font-size: 1.2em;
+  margin-left: 43%;
+  position: relative;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  opacity: 0.5;
+  z-index: -100;
+}
