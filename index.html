@@ -9,18 +9,24 @@
       var images = ['swing.jpeg', 'kids.jpeg', 'cave.jpeg', 'hike.jpeg', 'spark.jpeg'];
       var today = new Date();
 
-      function is_now() {
-        if( today.getHours() >= 19 && today.getDate() == 27 && today.getMonth() == 9) {
-          if(confirm('¿Quieres ser parte de este gran proyecto?')) {
-            window.location.replace('https://twitter.com/search?f=tweets&vertical=default&q=%23LaSocial&src=typd');
-          }
+      function execute_on_time(hour, day, month, func) {
+        if( today.getHours() >= hour && today.getDate() == day && today.getMonth() == (month-1)) {
+          func();
+        }
+      }
+
+      function join_us() {
+        if(confirm('¿Quieres ser parte de este gran proyecto?')) {
+          window.location.replace('https://docs.google.com/forms/d/e/1FAIpQLSeyHKcyuAMAhdPU_CQr3jcU1a-lAZW-XQxP83HM0KglfXZ4-A/viewform');
         }
       }
 
       function random_me() {
         var images_path = 'assets/images/';
         document.getElementById('pic').src = images_path + images[Math.floor(Math.random()*5)];
-        is_now();
+        // If you want to see the message on certain hours of the day, use this:
+        // execute_on_time(15, 2, 11, join_us);
+        join_us();
       }
     </script>
   </head>
