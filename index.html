@@ -1,54 +1,301 @@
-<!doctype HTML>
-<html lang="es">
+<!DOCTYPE html>
+<html lang="en">
+
   <head>
-    <title>La social: Colectivo de ciudad</title>
-    <meta charset="utf-8" />
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
-    <link href="assets/css/style.css" rel="stylesheet">
-    <!-- Start of Woopra Code -->
-    <script>
-    (function(){
-            var t,i,e,n=window,o=document,a=arguments,s="script",r=["config","track","identify","visit","push","call","trackForm","trackClick"],c=function(){var t,i=this;for(i._e=[],t=0;r.length>t;t++)(function(t){i[t]=function(){return i._e.push([t].concat(Array.prototype.slice.call(arguments,0))),i}})(r[t])};for(n._w=n._w||{},t=0;a.length>t;t++)n._w[a[t]]=n[a[t]]=n[a[t]]||new c;i=o.createElement(s),i.async=1,i.src="//static.woopra.com/js/w.js",e=o.getElementsByTagName(s)[0],e.parentNode.insertBefore(i,e)
-    })("woopra");
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-    woopra.config({
-        domain: 'lasocial.com.co'
-    });
-    woopra.track();
-    </script>
-    <!-- End of Woopra Code -->
-    <script>
-      var images = ['swing.jpeg', 'kids.jpeg', 'cave.jpeg', 'hike.jpeg', 'spark.jpeg'];
-      var today = new Date();
+    <title>La Social: Colectivo de Ciudad</title>
 
-      function execute_on_time(hour, day, month, func) {
-        if( today.getHours() >= hour && today.getDate() == day && today.getMonth() == (month-1)) {
-          func();
-        }
-      }
+    <!-- CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="css/nivo-lightbox.css" rel="stylesheet" />
+    <link href="css/nivo-lightbox-theme/default/default.css" rel="stylesheet" type="text/css" />
+    <link href="css/owl.carousel.css" rel="stylesheet" media="screen" />
+    <link href="css/owl.theme.css" rel="stylesheet" media="screen" />	
+    <link href="css/animate.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet">
+    <link href="color/default.css" rel="stylesheet">
+    <!-- =======================================================
+      Theme Name: Lonely
+      Theme URL: https://bootstrapmade.com/free-html-bootstrap-template-lonely/
+      Author: BootstrapMade
+      Author URL: https://bootstrapmade.com
+      ======================================================= -->
 
-      function join_us() {
-        if(confirm('¿Quieres asistir al encuentro Reforma Tributaria, Emprendimiento y Tecnología el 15 de febrero en Bogotá?')) {
-          window.location.replace('https://docs.google.com/forms/d/e/1FAIpQLSdrijER5R32Fa5IivI7viK5EZq1o55VRDWnUrQCDdOS6Fb_iA/viewform');
-        }
-      }
-
-      function random_me() {
-        var images_path = 'assets/images/';
-        document.getElementById('pic').src = images_path + images[Math.floor(Math.random()*5)];
-        // If you want to see the message on certain hours of the day, use this:
-        // execute_on_time(15, 2, 11, join_us);
-        join_us();
-      }
-    </script>
   </head>
-  <body style="background-color: black;" onload="random_me();"> 
-    <header>
-      <h1>
-        #LaSocial<br/ >
-        Colectivo de ciudad<br />
-      </h1>
-    </header>
-    <img id="pic" src="#" />
+
+  <body id="page-top" data-spy="scroll" data-target=".navbar-custom">
+    <!-- Preloader -->
+    <div id="preloader">
+      <div id="load"></div>
+    </div>
+
+    <!-- Section: intro -->
+    <section id="intro" class="intro">
+
+      <div class="slogan">
+        <a href="index.html"><img src="img/logo.png" alt="" /></a>
+      </div>
+      <div class="page-scroll">
+        <a href="#about">
+          <i class="fa fa-angle-down fa-5x animated"></i>
+        </a>
+      </div>
+    </section>
+    <!-- /Section: intro -->
+
+    <!-- Navigation -->
+    <div id="navigation">
+      <nav class="navbar navbar-custom" role="navigation">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+
+              <!-- Brand and toggle get grouped for better mobile display -->
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">
+                  <i class="fa fa-bars"></i>
+                </button>
+              </div>
+              <!-- Collect the nav links, forms, and other content for toggling -->
+              <div class="collapse navbar-collapse" id="menu">
+                <ul class="nav navbar-nav">
+                  <li class="active"><a href="#intro">Home</a></li>
+                  <li><a href="#about">About Us</a></li>
+                  <li><a href="#gallery">My gallery</a></li>                                                                                                             
+                  <li><a href="#contact">Talk with us</a></li>
+                </ul>
+              </div>
+              <!-- /.Navbar-collapse -->
+
+            </div>
+          </div>
+        </div>
+        <!-- /.container -->
+      </nav>
+    </div> 
+    <!-- /Navigation -->  
+
+    <!-- Section: about -->
+    <section id="about" class="home-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2">
+
+            <div class="section-heading text-center">
+              <div class="wow bounceInDown" data-wow-delay="0.2s">
+                <h2>Somos La Social</h2>
+              </div>
+              <p class="wow bounceInUp" data-wow-delay="0.3s">un colectivo de ciudad</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+
+            <img src="img/img1.jpg" class="img-responsive img-rounded" alt="" />
+          </div>		
+          <div class="col-md-6">
+            <p><strong>You'll fall in love with us at the first sight</strong></p>
+            <p>
+              Gestionamos conocimiento a trav&eacute;s de cualquier m&eacute;todo que permitan
+              aprovechar de forma efectiva la informaci&oacute;n generada a lo largo del tiempo.
+            </p>
+            <blockquote>
+              Queremos construir, planear, coordinar y difundir el conocimiento que se genera en
+              encuentros con diversos actores que permitan la documentaci&oacute;n para transmitirlo
+              en diferentes canales y formatos, sin dejar de lado el relacimiento en espacios colaborativos
+              y consultivos.
+            </blockquote>
+            <a href="#gallery" class="btn btn-skin btn-lg btn-scroll">Mira quienes somos</a>
+          </div>
+        </div>		
+      </div>
+    </section>
+    <!-- /Section: about -->
+
+    <!-- Section: separator -->
+    <section id="separator" class="home-section parallax text-center" data-stellar-background-ratio="0.5">
+
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-6 col-sm-3 col-md-3">
+            <div class="align-center txt-shadow">
+              <div class="icon">
+                <i class="fa fa-graduation-cap fa-5x"></i>
+              </div>
+              <span class="color-white">Gesti&oacute;n del Conocimiento</span>
+            </div>
+          </div>
+          <div class="col-xs-6 col-sm-3 col-md-3">
+            <div class="align-center txt-shadow">
+              <div class="icon">
+                <i class="fa fa-heart fa-5x"></i>
+              </div>
+              <span class="color-white">Marketing Digital</span>
+            </div>
+          </div>
+          <div class="col-xs-6 col-sm-3 col-md-3">
+            <div class="align-center txt-shadow">
+              <div class="icon">
+                <i class="fa fa-plane fa-5x"></i>
+              </div>
+              <span class="color-white">Facilitaci&oacute;n</span>
+            </div>
+          </div>
+          <div class="col-xs-6 col-sm-3 col-md-3">
+            <div class="align-center txt-shadow">
+              <div class="icon">
+                <i class="fa fa-camera fa-5x"></i>
+              </div>
+              <span class="color-white">Consultor&iacute;a</span>
+            </div>
+          </div>
+        </div>		
+      </div>
+    </section>
+    <!-- /Section: separator -->
+
+
+    <!-- Section: gallery -->
+    <section id="gallery" class="home-section text-center bg-gray">
+
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2">
+            <div class="wow bounceInDown" data-wow-delay="0.4s">
+              <div class="section-heading">
+                <h2>As&iacute; somos nosotros</h2>
+                <p>Take a look at our best moments, enjoy</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-12 col-lg-12" >
+            <div class="wow bounceInUp" data-wow-delay="0.4s">
+              <div id="owl-works" class="owl-carousel">
+                <div class="item">
+                  <a href="img/gallery/1.jpg" title="Sebasti&aacute;n Grisales - @sebasgrisalesr" data-lightbox-gallery="gallery1">
+                    <img src="img/gallery/1.jpg" class="img-responsive" alt="img">
+                  </a>
+                </div>
+                <div class="item">
+                  <a href="img/gallery/2.jpg" title="Catalina L&oacute;pez - @catalojara88" data-lightbox-gallery="gallery1">
+                    <img src="img/gallery/2.jpg" class="img-responsive " alt="img">
+                  </a>
+                </div>
+                <div class="item"><a href="img/gallery/3.jpg" title="Carolina Echeverry - @caroecheverri" data-lightbox-gallery="gallery1">
+                    <img src="img/gallery/3.jpg" class="img-responsive" alt="img">
+                  </a>
+                </div>
+                <div class="item">
+                  <a href="img/gallery/4.jpg" title="C&eacute;sar S&aacute;nchez - @elcesarpaisa" data-lightbox-gallery="gallery1">
+                    <img src="img/gallery/4.jpg" class="img-responsive" alt="img">
+                  </a>
+                </div>
+                <div class="item">
+                  <a href="img/gallery/5.jpg" title="Esteban Zapata - @estebanz01" data-lightbox-gallery="gallery1">
+                    <img src="img/gallery/5.jpg" class="img-responsive " alt="img">
+                  </a>
+                </div>
+                <div class="item"><a href="img/gallery/6.jpg" title="Primer evento La Social" data-lightbox-gallery="gallery1">
+                    <img src="img/gallery/6.jpg" class="img-responsive " alt="img">
+                  </a>
+                </div>
+                <div class="item">
+                  <a href="img/gallery/7.jpg" title="Trabajo en equipo - La Social" data-lightbox-gallery="gallery1">
+                    <img src="img/gallery/7.jpg" class="img-responsive " alt="img">
+                  </a>
+                </div>
+                <div class="item">
+                  <a href="img/gallery/8.jpg" title="Grandes invitados - La Social" data-lightbox-gallery="gallery1">
+                    <img src="img/gallery/8.jpg" class="img-responsive " alt="img">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /Section: services -->
+
+    <!-- Section: contact -->
+    <section id="contact" class="home-section text-center">
+      <div class="heading-contact">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 col-md-offset-2">
+
+              <div class="section-heading">
+                <div class="wow bounceInDown" data-wow-delay="0.4s">
+                  <h2>&iexcl;Cont&aacute;ctanos!</h2>
+                </div>
+                <p class="wow lightSpeedIn" data-wow-delay="0.3s">Hablemos, disfrutemos, conozcamos y compartamos</p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-8 col-md-offset-2">
+            <div class="form-wrapper marginbot-50">
+              <div class="text-center" >
+                <a href="http://eepurl.com/cE2Vn1" target="_blank" class="btn btn-skin btn-group" style="font-size: 14pt">Inscribete en nuestra lista</a>
+              </div>
+            </div>
+            <div class="text-center">
+              <br />
+              <p class="lead"><i class="fa fa-phone"></i> LL&aacute;manos al 312-801-5893</p>
+            </div>
+          </div>
+        </div>	
+      </div>
+    </section>
+    <!-- /Section: contact -->
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-lg-12">
+            <p>&copy; Lonely Theme. All Rights Reserved</p>
+            <div class="credits">
+              <a href="https://bootstrapmade.com/">Free Bootstrap Themes</a> by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+            </div>
+          </div>
+        </div>	
+      </div>
+    </footer>
+
+    <!-- Core JavaScript Files -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>	
+    <script src="js/jquery.sticky.js"></script>
+    <script src="js/jquery.scrollTo.js"></script>
+    <script src="js/stellar.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/nivo-lightbox.min.js"></script>
+    <!-- Custom Theme JavaScript -->
+    <script src="js/custom.js"></script>
+    <script src="contactform/contactform.js"></script>
+
   </body>
+
 </html>
