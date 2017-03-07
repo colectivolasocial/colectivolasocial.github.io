@@ -40,6 +40,15 @@
             itemsMobile : [480,2],
         });
 	
+  $('#owl-works-1').owlCarousel({
+            items : 4,
+            itemsDesktop : [1199,5],
+            itemsDesktopSmall : [980,5],
+            itemsTablet: [768,5],
+            itemsTabletSmall: [550,2],
+            itemsMobile : [480,2],
+        });
+	
 	//nivo lightbox
 	$('.owl-carousel .item a').nivoLightbox({
 		effect: 'fadeScale',                             // The effect to use when showing the lightbox
