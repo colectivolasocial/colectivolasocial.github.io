@@ -1488,7 +1488,7 @@
 			}
 
 				#intro, #movilidad, #politicaspublicas, #acuerdosciudadanos, #normatividadempresas, #iniciativaciudadana p br {
-					display: none;
+					/* display: none; */
 				}
 
 		}
